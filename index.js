@@ -245,12 +245,12 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(array, search){
-  for(let i = 0; i < array.length; i++){
-    if(array[i].includes(search)){
-      return array[i];
-    }
-  }
+function get20s(artists){
+  let filtered20s = [];
+ for(let i = 0; i < artists.length; i++){
+   filtered20s.push(artists[i]);
+ }
+ return filtered20s;
 }
 
 
@@ -301,16 +301,16 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(array, search){
-  let filteredArt = [];
+function lotsOfArt(array){
+  let lots = [];
   for(let i = 0; i < array.length; i++){
-    if(arr[i].includes(search)){
+    if(array[i].paintings > 100){
+      lots.push(artists[i].name);
     }
-    return filteredArt;
   }
-  
+  return lots;
 }
-
+console.log(lotsOfArt(artists));
 
 
 
