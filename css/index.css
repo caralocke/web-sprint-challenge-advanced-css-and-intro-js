@@ -87,10 +87,10 @@ nav span{
 /*Responsive Styles Breakpoints*/
 @media(max-width:500px){
     nav{
-        width:50%;
+        width:60%;
     }
     header nav a{
-        padding:5%;
+        padding:3%;
     }
 }
 /*Title Section Styles*/
@@ -130,6 +130,14 @@ button:hover{
     border:2px solid white;
     color:white;
     box-shadow: 2px 2px 1px white;
+}
+/*Responsive Design Breakpoint*/
+@media(max-width:500px){
+    .title-container div{
+        width: 100%;
+        height: 30vh;
+    }
+
 }
 /*Artists Section Styles */
 .artists-container{
