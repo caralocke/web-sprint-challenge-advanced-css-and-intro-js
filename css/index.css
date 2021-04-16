@@ -87,7 +87,7 @@ nav span{
 /*Responsive Styles Breakpoints*/
 @media(max-width:500px){
     nav{
-        width:60%;
+        width:65%;
     }
     header nav a{
         padding:3%;
