@@ -287,8 +287,9 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(array){
+    array.push = [{id: 20, name: 'Cara Locke', years: "1984 - 2021", genre: 'Web Design', nationality: 'American', bio:`I'm a married mom of two teenagers just doing my best to get by in this world. I'm really hoping I can understand coding better and excel at it.`}]
+    return array;
   }
 
   
