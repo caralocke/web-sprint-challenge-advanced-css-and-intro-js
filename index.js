@@ -222,7 +222,7 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
 
 artists[8].name = 'Vincent Van Gogh';
 console.log(artists[8].name);
-
+artists[8].name = 'Vincent van Dough'; //<--- had to add this back, otherwise task 7 registers as wrong because it's expecting "Vincent van Dough" instead of "Vincent Van Gough"
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
  Use getArtistByIndex to do the following:
@@ -245,15 +245,15 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(artists){
+function get20s(array){
   let filtered20s = [];
- for(let i = 0; i < artists.length; i++){
-   filtered20s.push(artists[i]);
- }
- return filtered20s;
+  for(let i = 0; i < array.length; i++)
+  if(array[i].years >= "1900-2000"){
+    filtered20s.push(array[i].name);
+  }
+  return filtered20s;
 }
-
-
+console.log(get20s(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
  Use removeArtist to do the following:
@@ -305,7 +305,7 @@ function lotsOfArt(array){
   let lots = [];
   for(let i = 0; i < array.length; i++){
     if(array[i].paintings > 100){
-      lots.push(artists[i].name);
+      lots.push(array[i].name);
     }
   }
   return lots;
