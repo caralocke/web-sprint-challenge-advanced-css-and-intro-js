@@ -20,7 +20,7 @@ vertical-align: baseline;
 }
 *{
     box-sizing: border-box;
-    border: 0;
+    border:1px solid grey;
 }
 /*GENERAL STYLES*/
 html{
@@ -164,7 +164,7 @@ button:hover{
     }
     .artist{
         width: 100%;
-        padding:5%;
+        padding: 5%;
     }
     .artist img{
         width:100%
